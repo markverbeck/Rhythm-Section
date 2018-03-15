@@ -1,0 +1,61 @@
+.icon{
+	width: 12%;
+    display: inherit;
+    margin-right: 41px;
+    margin-top: 39px;
+
+}
+
+#icon{
+	width: 15%;
+}
+
+#iTunes{
+	width: 15%;
+}
+
+#google {
+	width: 15%;
+}
+
+#footer{
+	background: #7343B8;
+	border: 6px outset #74e947;
+	color: white;
+	font-family: 'Indie Flower', cursive;
+}
+
+
+.block1{
+	padding-left: 129px;
+}
+
+.block3{
+ 	padding-left: 129px;
+}
+.block2{
+    font-size: 12px;
+    margin-top: 11px;
+    margin-bottom: 1px;
+}
+
+.footText {
+	font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+}
+
+.linkFoot{
+	color: #74e947;
+}
+a{
+	color: #74e947;
+}
+a:hover{
+	color: white;
+	background: none;
+}
+
+p{
+	margin-bottom: 0px;
+}

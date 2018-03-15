@@ -1,0 +1,77 @@
+.navStyle {
+	background: #7343B8;
+	border: 6px outset #74e947;
+	
+}
+
+.text {
+	color: white;
+	font-size: 20px;
+	font-family: 'Coiny', cursive;
+	margin-top: 13px;
+	margin-bottom: 13px;
+	margin-left: 2px;
+    text-decoration: underline;
+    text-decoration-color: #DED1EB;
+}
+
+.textHead {
+	color: white;
+	font-size: 22px;
+	font-family: 'Coiny', cursive;
+	margin-top: 13px;
+	margin-bottom: 13px;
+	margin-left: 3px;
+	
+
+}
+a:focus, a:hover {
+	background-color: #DED1EB;
+	color:#7343B8 ;
+	text-decoration: underline;
+    text-decoration-color: #7343B8;
+}
+
+ .nav>li>a:hover {
+	background-color: #DED1EB;
+	color:#7343B8 ;
+	margin-left: 2px;
+	text-decoration: underline;
+    text-decoration-color: #7343B8;
+}
+.nav>li>a: focus {
+	background-color: #DED1EB;
+	color:#7343B8 ;
+	
+}
+
+.dropdown-menu {
+	background-color: #7343B8;
+
+	
+} 
+
+.dropdown-menu>li>a {
+	color:white ;
+}
+
+.dropdown-menu>li>a:hover {
+	background-color: #DED1EB;
+	color:#7343B8 ;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-decoration: underline;
+    text-decoration-color: #7343B8;
+}
+
+#userName {
+	margin-right: 140px;
+    font-size: 32px;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+#tomNav {
+	width: 4%;
+	margin-top: 7px;
+}

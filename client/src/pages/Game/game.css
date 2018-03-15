@@ -1,0 +1,97 @@
+#score {
+	width: 91%;
+	overflow: scroll;
+	border: 10px outset #7343B8;
+    outline: 5px outset #74e947;
+    margin-top: 41px;
+    margin-bottom: 54px;
+}
+
+#notes {
+	width: 410px;
+}
+
+#tomPic{
+	
+    margin-top: 2px;
+    margin-left: 72px;
+    width: 50%;
+    
+
+}
+
+#tomTitle {
+	color: white;
+    background: #7343B8;
+    border-radius: 23px;
+    border: 6px outset #74e947;
+    font-family: 'Coiny', cursive;
+    text-decoration: underline;
+    margin-top: 5px;
+    margin-left: 52px;
+    margin-right: 82px;
+    padding-left: 21px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    font-size: 32px;
+	
+}
+
+#pointList {
+	color: white;
+    background: #7343B8;
+    border-radius: 23px;
+    border: 6px outset #74e947;
+    font-family: 'Indie Flower', cursive;
+    margin-top: 19px;
+    width: 36%;
+    margin-left: 96px;
+}
+
+.pointText {
+	font-size: 19px;
+}
+
+.butt {
+	font-weight: bold;
+    font-size: 24px;
+    color: #7343B8;
+    margin-left: 20px;
+    margin-top: 9px;
+    border-radius: 14px
+}
+
+#scores {
+	color: #7343B8;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
+    font-size: 36px;
+    margin-right: 68px;
+}
+
+#logOrSign {
+	font-family: 'Coiny', cursive;
+    font-size: 43px;
+    margin-left: 139px;
+    margin-right: 107px;
+    margin-bottom: 185px;
+    margin-top: 159px;
+}
+
+.green {
+	color:#74e947;
+	font-size: 22px;
+	
+}
+
+.red {
+	color: red;
+	font-size: 22px;
+}
+
+@keyframes greenish {
+    from {color: white;}
+    to {color: #74e947;}
+    from {font-size: 19px;}
+    to {font-size: 22px}
+}
