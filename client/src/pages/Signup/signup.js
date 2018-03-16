@@ -9,13 +9,15 @@ import logOutButton from "../../files/logout-button-purple.png";
 
 
 
+
 class Signup extends Component {
 	state={
 		firstName: "",
 		lastName: "",
 		userName: "",
 		password: "",
-		loggedIn: false
+		loggedIn: false,
+		
 	};
 	
 
@@ -47,7 +49,9 @@ class Signup extends Component {
 
   reload = () => {
   	this.setState({loggedIn:true});
-  }
+  };
+
+  
   
 
   
@@ -56,6 +60,7 @@ class Signup extends Component {
 		if(!this.state.loggedIn){
 		return(
 		<div>
+		
 		<NavBar />
 		<Container>
 			<Row>

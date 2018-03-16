@@ -14,44 +14,9 @@ import Eighth from "./pages/EighthNote";
 import OnOff from "./pages/OnOff";
 import FunkyTomEx from "./pages/FunkyTomEx";
 import LogOut from "./pages/LogOut";
-import API from "./utils/API";
 
 
-class App extends Component {
-  state = {
-    loggedIn: "",
-    userName: "",
-    password: "",
-  };
-
-  
-
-  componentDidMount() {
-    API.loggedIn(true).then(res => 
-      this.setState({
-        loggedIn: res.data[0].loggedin, userName: res.data[0].userName, password: res.data[0].password})
-      ).catch(err => console.log(err));
-    
-  };
-  // componentWillUnmount (){
-  //   window.onunload = () => {
-  //     this.logOut();
-  //   }
-  // };
-
-  logOut = () =>{
-    API.logOut({
-        userName: this.state.userName,
-        password: this.state.password
-      })
-        .then(() => console.log("Logged Out"))
-        .catch(err => console.log(err));
-        
-
-    };
-render(){
-
-  return(
+const App = () => 
   <Router>
     <Switch>
       <Route exact path="/" component={Home} />
@@ -70,9 +35,6 @@ render(){
       <Route exact path="/logout" component={LogOut} />
     </Switch>
   </Router>
-  );
-}
-}
 
 
 export default App;

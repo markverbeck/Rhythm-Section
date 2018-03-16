@@ -20,7 +20,8 @@ class Instructions extends Component {
 
 	componentDidMount() {
 		API.loggedIn(true).then(res => 
-			this.setState({loggedIn: res.data[0].loggedin, userName: res.data[0].userName, password: res.data[0].password})
+			this.setState({
+				loggedIn: res.data[0].loggedin, userName: res.data[0].userName, password: res.data[0].password})
 			).catch(err => console.log(err));
 		
 	};
@@ -45,6 +46,8 @@ class Instructions extends Component {
 						<span className="keys">
 							<img id="mKey" className="img-responsive keys" src={Mkey} /><h3 className="equal keys">=</h3><img id="mute" className="img-responsive img-thumbnail keys" src={Mute} />
 						</span>
+
+							<h3 id="warning"> !Do not use bluetooth speakers!</h3>
 						<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/5MtdRyyuBfM" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
 					</div>
 				</Row>

@@ -25,3 +25,56 @@ iframe {
 .noteExample {
 	margin-bottom: 75px;
 }
+
+@media only screen and (max-width: 1199px){
+.example {
+	background: #7343B8;
+    font-family: 'Coiny', cursive;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    margin-left: 248px;
+    margin-right: 229px;
+    border-radius: 23px;
+    border: 6px outset #74e947;
+    color: white;
+    margin-bottom: 66px;
+    margin-top: 53px;
+    font-size: 29px;
+}
+
+.exampDescrip{
+	font-family: 'Indie Flower', cursive;
+    font-size: 15px;
+}
+
+}
+
+@media only screen and (max-width: 991px){
+	.example {
+	background: #7343B8;
+    font-family: 'Coiny', cursive;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    margin-left: 197px;
+    margin-right: 172px;
+    border-radius: 23px;
+    border: 6px outset #74e947;
+    color: white;
+    margin-bottom: 66px;
+    margin-top: 53px;
+    font-size: 22px;
+}
+
+.exampDescrip{
+	font-family: 'Indie Flower', cursive;
+    font-size: 15px;
+}
+
+#onOff{
+	font-size: 28px;
+}
+
+#FTE {
+	font-size: 28px;
+}
+}

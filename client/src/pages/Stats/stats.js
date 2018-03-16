@@ -4,13 +4,16 @@ import { Col, Row, Container } from "../../components/Grid";
 import Footer from "../../components/Footer";
 import API from "../../utils/API";
 import "./stats.css";
+import Song from "./funky-Tom-background2.mp3";
+import ReactHowler from 'react-howler';
 
 
 class Stats extends Component {
 	state = {
 		firstName: "",
 		lastName: "",
-		stats: []
+		stats: [],
+		playStatus: true
 
 	}
 	componentDidMount() {
@@ -24,7 +27,16 @@ class Stats extends Component {
 		API.searchScore(this.state.firstName, this.state.lastName)
 		.then(res => this.setState({stats: res.data})).then(() => console.log(this.state.stats))
 		.catch(err => console.log(err));
-	}
+	};
+
+	stopSong=()=>{
+		if(this.state.playStatus === true){
+			this.setState({playStatus: false});
+		}else{
+			this.setState({playStatus: true})
+
+	};
+};
 
 
 	render(){
@@ -32,11 +44,16 @@ class Stats extends Component {
 		
 		return(
 		<div>
+		<ReactHowler
+	          src={Song}
+	          playing={this.state.playStatus}
+	          loop={true}
+	        />
 		<NavBar />
 		<Container>
 			<Row>
 				<div id="yourStats" className="text-center col-md-12">
-					<h1>Hello {this.state.firstName} here are your stats!</h1>
+					<h1 title="Click to pause music" onClick={()=> this.stopSong()} id="hello">Hello {this.state.firstName} here are your stats!</h1>
 				</div>
 			</Row>
 			<Row>

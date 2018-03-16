@@ -120,16 +120,19 @@ class Game extends Component {
 				this.pointUp();
 				this.setState({aKeyPressed: true});
 				this.setState({hitClass:"pointText text-center green"})
+				this.setState({missClass: "pointText text-center"});
 				break;
 			case 103:
 				this.pointUp();
 				this.setState({aKeyPressed: true});
 				this.setState({hitClass:"pointText text-center green"})
+				this.setState({missClass: "pointText text-center"});
 				break;
 			case 104:
 				this.pointUp();
 				this.setState({aKeyPressed: true});
 				this.setState({hitClass:"pointText text-center green"})
+				this.setState({missClass: "pointText text-center"});a
 				break;
 			// Each group of three represents one available point.
 
@@ -2230,6 +2233,8 @@ class Game extends Component {
     }
 
      if(letter === "m"){
+     	this.setState({dKeyPressed: false});	
+     	this.setState({aKeyPressed: false});
      	this.setState({aStatus: false, seek: 0, volume: 0});
         this.setState({gStatus: false, seek: 0, volume: 0});
     }
@@ -2288,7 +2293,7 @@ class Game extends Component {
 						<h1  id="tomTitle">Funky Tom</h1>
 
 						<div id="pointList">
-							<button onClick={this.startGame} type="button" className="btn btn-default butt">Start</button>
+							<button onClick={this.startGame} type="button" className="btn btn-default butt text-center">Start</button>
 						      <h3 className={this.state.hitClass} >Hits: {this.state.points}</h3>
 						      <h3 className={this.state.missClass}>Misses: {this.state.misses}</h3>
 						      <h3 className="pointText text-center">Beats: {this.state.beat}</h3>

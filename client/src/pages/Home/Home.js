@@ -44,7 +44,7 @@ render(){
 			
 			<Row>
 				<div className="col-md-4">
-					<img id="funkyTom" className="img-responsive animated tada" onClick={()=> this.stopSong()} src={FunkyTom} />
+					<img title="Click to pause music" id="funkyTom" className="img-responsive animated tada" onClick={()=> this.stopSong()} src={FunkyTom} />
 
 				</div>
 				<div id="headDiv" className="text-center col-md-8">
@@ -55,8 +55,11 @@ render(){
 			<Row>
 				<div id="paragraph" className="col-md-12">
 					<p  className="text-center homeText">
-					Rhythm Section is an interactive web application that is designed to help you learn and improve your sense of rhythm.  One of the hardest things while pursing a musical instrument is how to play with correct timing.  It can be extremely frustrating to learn while trying to grapple with the fundamentals of your instrument, it can often deter a person from pursuing any sort of musical journey at all.  Now with our interactive framework, you can train your sense of rhythm with our exercises and original musical compositions by tapping your keyboard along with the beat.  Unlike other music gaming platforms, you will not be relying on hand-eye coordination to virtually play along, you will have to read actual music notation and play with the correct timing.  Our program will know if your timing is on or off and award your with a “hit” or a “miss” giving you a ratio between the two numbers.  The better your ratio, the better your rhythm, and the better the music sounds!  The more you complete, the better you get!  The better you get, the faster you can excel at your instrument!
+					Rhythm Section is an interactive web application that is designed to help you learn and improve your sense of rhythm.
+                    How to play with correct timing is one of the hardest lessons while pursing a musical instrument.  It can be extremely frustrating to learn while trying to grapple with the fundamentals of your instrument; it can often deter a person from pursuing any sort of musical journey at all. 
 					</p>
+					<br/>
+					<p>Now with our interactive framework, you can train your sense of rhythm with our exercises and original musical compositions by tapping your keyboard along with the beat.  Unlike other music gaming platforms, you will not be relying on hand-eye coordination to virtually play along, you will have to read actual music notation and play with the correct timing.  Our program will know if your timing is on or off and award your with a “hit” or a “miss” giving you a ratio between the two numbers.  The better your ratio, the better your rhythm, and the better the music sounds!  The more you complete, the better you get.  The better you get, the faster you can excel at your instrument. </p>
 					<p className="text-center homeText">Click above to get started!!</p>
 					
 				</div>

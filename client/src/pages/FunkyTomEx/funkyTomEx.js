@@ -12,7 +12,7 @@ class FunkyTomEx extends Component{
 					<Row>
 						<div className="text-center col-md-12">
 							<div className="example">
-								<h1>Funky Tom Example</h1>
+								<h1 id="FTE">Funky Tom Example</h1>
 								<p className="exampDescrip">Use this exercise to help complete the Funky Tom challenge!</p>
 							</div>
 							<iframe src="https://flat.io/embed/5a934894f884802a89fc8fff?layout=responsive&audioSource=&videoPosition=" height="450" width="100%" frameBorder="2" allowFullScreen></iframe>

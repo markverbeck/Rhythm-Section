@@ -18,6 +18,7 @@ class Login extends Component {
 		logPass: "",
 		incorrect: "",
 		
+		
 	};
 
 	componentDidMount() {
@@ -54,8 +55,10 @@ class Login extends Component {
         .catch(err => console.log(err));
         
         
-    }
-};
+    	}
+	};
+
+	
 
 
   	correctUser = () =>{
@@ -87,6 +90,7 @@ class Login extends Component {
 
 		return(
 		<div>
+		
 		<NavBar />
 		<Container>
 			<Row>

@@ -24,26 +24,15 @@ class Footer extends Component{
 			).catch(err => console.log(err));
 	};
 
-	logOut = () =>{
-  	API.logOut({
-        userName: this.state.userName,
-        password: this.state.password
-      })
-        .then(() => console.log("Logged Out"))
-        .catch(err => console.log(err));
-        
-
-  	};
+	
 
 	render(){
-		// window.onunload = () => {
-		// 	this.logOut();
-		// }
+		
 		if(this.state.loggedIn){
 			return(
 		<div id="footer" className="">
 		<div className="row">
-			<div className="col-md-4 footBlock block1">
+			<div className="footIcon col-md-4 footBlock block1">
 			<a href="https://www.facebook.com/scotchhollow/" target="_blank"><img id="icon" className="img-responsive icon" src={Facebook}/></a>
 			<a href="https://www.instagram.com/scotchhollow/" target="_blank"><img className="img-responsive icon" src={Instagram}/></a>
 			<a href="https://twitter.com/scotchhollow1" target="_blank"><img className="img-responsive icon" src={Twitter}/></a>
@@ -56,7 +45,7 @@ class Footer extends Component{
 			<a className="linkFoot" href="/stats">Stats</a>
 			<p>©  Mark Verbeck  All rights reserved.</p>
 			</div>
-			<div className="col-md-4 footBlock block3">
+			<div className="footIcon col-md-4 footBlock block3">
 			<a href="https://itunes.apple.com/us/artist/scotch-hollow/736110461" target="_blank"><img id="iTunes" className="img-responsive icon" src={Itunes}/></a>
 			<a href="https://open.spotify.com/artist/5QVuEnNTkvuXUPmsqccxEY" target="_blank"><img className="img-responsive icon" src={Spotify}/></a>
 			<a href="https://play.google.com/store/music/artist/Scotch_Hollow?id=Ae3d3s4f4oylo2h67hhwsdp3yem" target="_blank"><img id="google" className="img-responsive icon" src={GooglePlay}/></a>
@@ -67,21 +56,21 @@ class Footer extends Component{
 	return(
 	<div id="footer" className="">
 	<div className="row">
-			<div className="col-md-4 footBlock block1">
+			<div className="footIcon col-md-4 footBlock block1">
 			<a href="https://www.facebook.com/scotchhollow/" target="_blank"><img id="icon" className="img-responsive icon" src={Facebook}/></a>
 			<a href="https://www.instagram.com/scotchhollow/" target="_blank"><img className="img-responsive icon" src={Instagram}/></a>
 			<a href="https://twitter.com/scotchhollow1" target="_blank"><img className="img-responsive icon" src={Twitter}/></a>
 			</div>
 			<div className="footText col-md-4 text-center footBlock block2">
 			<p>Rhythm Section</p>
-			<a href="/">Home | </a>
+			<a id="linkFoot" href="/">Home | </a>
 			<a className="linkFoot" href="mailto: mrkverbeck@gmail.com">Contact | </a>
 			<a className="linkFoot" href="/login">Login | </a> 
 			<a className="linkFoot" href="/signup">Signup</a>
 			<p>©  Mark Verbeck  All rights reserved.</p>
 			</div>
-			<div className="col-md-4 footBlock block3">
-			<a href="https://itunes.apple.com/us/artist/scotch-hollow/736110461" target="_blank"><img className="img-responsive icon" src={Itunes}/></a>
+			<div className="footIcon col-md-4 footBlock block3">
+			<a href="https://itunes.apple.com/us/artist/scotch-hollow/736110461" target="_blank"><img id="iTunes" className="img-responsive icon" src={Itunes}/></a>
 			<a href="https://open.spotify.com/artist/5QVuEnNTkvuXUPmsqccxEY" target="_blank"><img className="img-responsive icon" src={Spotify}/></a>
 			<a href="https://play.google.com/store/music/artist/Scotch_Hollow?id=Ae3d3s4f4oylo2h67hhwsdp3yem" target="_blank"><img className="img-responsive icon" src={GooglePlay}/></a>
 			</div>
